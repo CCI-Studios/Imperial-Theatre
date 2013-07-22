@@ -1,0 +1,24 @@
+name = Imperial Theatre Custom
+description = Imperial Theatre Custom
+core = 7.x
+
+scripts[] = js/mobile-menu.js
+scripts[] = js/carousel.js
+
+stylesheets[all][] = stylesheets/screen.css
+
+regions[navigation] = Navigation
+regions[header] = Header
+
+regions[pre_content] = Before Content
+regions[help] = Help
+regions[content] = Content
+regions[post_content] = After Content
+
+regions[sidebar_first] = Sidebar
+
+regions[widgets] = Widgets
+
+regions[footer] = Footer
+
+regions[body] = Body
