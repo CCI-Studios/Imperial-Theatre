@@ -2,12 +2,13 @@
 	var x = 1;
 	var max = 0;
 	var timer = null;
+	var wait_time = 6000;
 	$(function() {
 		$(".view-nodequeue-1 .views-field-field-carousel-thumb img").click(function(){
 			clearActive();
 			var container = $(this).parent().parent().parent();
 			setActive(container);
-			resetTimer();
+			clearTimer();
 			x = container.index()+1;
 		});
 
@@ -44,7 +45,12 @@
 
 	function resetTimer()
 	{
+		clearTimer();
+		timer = setTimeout(next, wait_time);
+	}
+
+	function clearTimer()
+	{
 		clearTimeout(timer);
-		timer = setTimeout(next, 4000);
 	}
 }(jQuery));

@@ -46,7 +46,16 @@ html
 	background-color:black;
 }
 
-html:before
+body
+{
+	font-family:"Century Gothic", Arial, sans-serif;
+	padding-top:18px;
+	background:black url(../images/theatre.jpg) no-repeat center 16px;
+	color:white;
+	font-size:15px;
+}
+
+body:before
 {
 	position:absolute;
 	width:100%;
@@ -56,15 +65,6 @@ html:before
 	height:27px;
 	background:url(../images/body-border.png) repeat-x top;
 	z-index:2;
-}
-
-body
-{
-	font-family:"Century Gothic", Arial, sans-serif;
-	padding-top:18px;
-	background:black url(../images/theatre.jpg) no-repeat center 16px;
-	color:white;
-	font-size:15px;
 }
 
 body:after
@@ -111,6 +111,7 @@ body > *
 #block-system-main 
 {
 	padding-bottom:40px;
+	clear:both;
 }
 
 
@@ -706,7 +707,7 @@ a.red-button
 	background:url(../images/red-button.png) no-repeat top left;
 	color:white;
 	text-decoration:none;
-	text-align:center;
+	text-align:center!important;
 	text-transform:uppercase;
 	text-shadow:none;
 	overflow:hidden;
@@ -795,9 +796,10 @@ body .open-nav
 .view-nodequeue-1
 {
 	position:relative;
-	height:125px;
 	padding-top:454px;
 	padding-bottom:21px;
+	max-width:100%;
+	overflow:hidden;
 }
 
 .view-nodequeue-1 .views-field-body
@@ -806,11 +808,11 @@ body .open-nav
 	top:0;
 	left:0;
 	z-index:1;
-	height:330px;
-	width:860px;
+	width:94%;
 	overflow:hidden;
 	margin-bottom:4px;
 	padding:60px 40px;
+	padding:4% 3% 0 3%;
 	font-size:18px;
 	text-shadow:1px 1px 4px black;
 	display:none;
@@ -823,15 +825,18 @@ body .open-nav
 	top:0;
 	box-shadow:0 0 8px black;
 	display:none;
+	width:100%;
+	height:auto;
 }
 
 .view-nodequeue-1 .views-field-field-carousel-thumb
 {
 	float:left;
-	margin-right:3px;
 	cursor:pointer;
 	position:relative;
 	display:block;
+	width:24%;
+	margin-right:1.33333%;
 }
 
 .view-nodequeue-1 .active .views-field-field-carousel-thumb:before
@@ -846,15 +851,32 @@ body .open-nav
 	bottom:0;
 }
 
-.view-nodequeue-1 .views-row-3 .views-field-field-carousel-thumb
+.view-nodequeue-1 .views-field-field-carousel-thumb img 
 {
-	margin-right:2px;
+	width:100%;
+	height:auto;
 }
-
 .view-nodequeue-1 .views-row-4 .views-field-field-carousel-thumb
 {
 	margin-right:0;
 }
+
+#node-11 p 
+{
+	padding-left:310px;
+
+	img 
+	{
+		margin-left:-310px;
+	}
+}
+
+#node-25 ul li 
+{
+	margin-bottom:0.5em;
+}
+
+
 
 
 
@@ -882,7 +904,7 @@ body .open-nav
 
 @media screen and (max-width:816px)
 {
-	.front .w400
+	.front #block-system-main .w400
 	{
 		float:none;
 		margin:0 auto;
@@ -892,6 +914,11 @@ body .open-nav
 	.right a.red-button
 	{
 		float:left;
+	}
+
+	.view-nodequeue-1 .views-field-body
+	{
+		font-size:0.9em;
 	}
 }
 
@@ -930,22 +957,22 @@ body .open-nav
 		display:none;
 	}
 
-	.front .left,
-	.front .right 
+	.front #block-system-main .left,
+	.front #block-system-main .right 
 	{
 		float:none;
 		text-align:left;
 	}
-	.front .right a.red-button
+	.front #block-system-main .right a.red-button
 	{
 		float:none;
 	}
-	.front .half 
+	.front #block-system-main .half 
 	{
 		width:auto;
 		margin:0;
 	}
-	.front .w400 
+	.front #block-system-main .w400 
 	{
 		width:auto;
 	}
@@ -964,6 +991,12 @@ body .open-nav
 	h2.banner.small 
 	{
 		font-size:14px;
+	}
+
+	.view-nodequeue-1 .views-field-body
+	{
+		font-size:0.85em;
+		line-height:100%;
 	}
 
 
@@ -1049,6 +1082,11 @@ body .open-nav
 	h1#page-title
 	{
 		font-size:18px;
+	}
+
+	.view-nodequeue-1 .views-field-body
+	{
+		font-size:0.8em;
 	}
 }
 
