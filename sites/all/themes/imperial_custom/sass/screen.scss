@@ -170,6 +170,11 @@ body > *
 	padding-right:0;
 }
 
+#widgets .block h2 a 
+{
+	color:white;
+}
+
 #widgets .block h2,
 h2.banner-small
 {
@@ -394,7 +399,7 @@ h2.banner:after
 	top:100%;
 	left:0;
 	z-index:100;
-	width:258px;
+	width:272px;
 	background:#1b1b1b url(../images/submenu-bg.png) repeat-x 0 -4px;
 	border-radius:4px;
 }
