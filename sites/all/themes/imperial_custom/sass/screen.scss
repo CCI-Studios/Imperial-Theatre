@@ -41,6 +41,16 @@ h2
 	font-weight:normal;
 }
 
+th 
+{
+	text-align:center;
+}
+
+table.padding td 
+{
+	padding:5px;
+}
+
 html
 {
 	background-color:black;
@@ -232,6 +242,7 @@ h2.banner
 	position:relative;
 	line-height:46px;
 	text-transform:uppercase;
+	clear:both;
 }
 h2.banner:before
 {
@@ -762,7 +773,8 @@ body .open-nav
 	margin-bottom:0.5em;
 }
 
-#block-system-main img 
+#block-system-main img,
+#block-system-main iframe
 {
 	max-width:100%;
 }
@@ -785,6 +797,11 @@ body .open-nav
 .view-events.view-display-id-page .views-row
 {
 	margin-bottom:15px;
+}
+
+.node-type-event .field-name-field-event-date
+{
+	margin-bottom:0.5em;
 }
 
 #node-11 h2 
