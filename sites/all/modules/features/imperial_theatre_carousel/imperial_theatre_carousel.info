@@ -20,4 +20,4 @@ features[field_instance][] = node-carousel_item-field_carousel_thumb
 features[image][] = carousel_background
 features[image][] = carousel_thumb
 features[node][] = carousel_item
-features[views_view][] = Carousel
+features[views_view][] = carousel

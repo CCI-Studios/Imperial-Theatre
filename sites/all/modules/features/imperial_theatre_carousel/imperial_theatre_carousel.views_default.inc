@@ -11,7 +11,7 @@ function imperial_theatre_carousel_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'Carousel';
+  $view->name = 'carousel';
   $view->description = 'Display a list of all nodes in queue \'Carousel List\'';
   $view->tag = 'nodequeue';
   $view->base_table = 'node';
@@ -93,7 +93,7 @@ function imperial_theatre_carousel_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['block_description'] = 'Homepage Carousel';
-  $export['Carousel'] = $view;
+  $export['carousel'] = $view;
 
   return $export;
 }
