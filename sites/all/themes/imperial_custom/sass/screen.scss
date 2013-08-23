@@ -629,7 +629,7 @@ h1#page-title:after
 	background:url(../images/heading-right.png) no-repeat;
 }
 
-.view-id-news .views-field-field-date-1
+.calendar-icon
 {
 	float:left;
 	width:36px;
@@ -642,16 +642,38 @@ h1#page-title:after
 	margin-right:14px;
 }
 
-.view-id-news .views-field-field-date-1 .month
+.calendar-icon .month
 {
 	text-transform:uppercase;
 	font-size:12px;
 	display:block;
 }
-.view-id-news .views-field-field-date-1 .day
+.calendar-icon .day
 {
 	font-size:24px;
 	display:block;
+}
+
+.view-season-playbill h2 
+{
+	clear:left;
+}
+
+.view-season-playbill .views-field-field-image
+{
+	float:left;
+	margin:0 10px 10px 0;
+}
+
+.view-season-playbill .views-field-body
+{
+	padding-left:310px;
+}
+
+.view-season-playbill .views-field-field-event-date
+{
+	font-size:12px;
+	margin-bottom:30px;
 }
 
 .view-id-news .views-field-field-tagline
@@ -815,7 +837,8 @@ body .open-nav
 }
 
 
-.view-nodequeue-1
+.view-nodequeue-1,
+.view-carousel
 {
 	position:relative;
 	padding-top:454px;
@@ -824,7 +847,8 @@ body .open-nav
 	overflow:hidden;
 }
 
-.view-nodequeue-1 .views-field-body
+.view-nodequeue-1 .views-field-body,
+.view-carousel .views-field-body
 {
 	position:absolute;
 	top:0;
@@ -840,7 +864,8 @@ body .open-nav
 	display:none;
 }
 
-.view-nodequeue-1 .views-field-field-carousel-background img 
+.view-nodequeue-1 .views-field-field-carousel-background img,
+.view-carousel .views-field-field-carousel-background img 
 {
 	position:absolute;
 	left:0;
@@ -851,7 +876,8 @@ body .open-nav
 	height:auto;
 }
 
-.view-nodequeue-1 .views-field-field-carousel-thumb
+.view-nodequeue-1 .views-field-field-carousel-thumb,
+.view-carousel .views-field-field-carousel-thumb
 {
 	float:left;
 	cursor:pointer;
@@ -861,7 +887,8 @@ body .open-nav
 	margin-right:1.33333%;
 }
 
-.view-nodequeue-1 .active .views-field-field-carousel-thumb:before
+.view-nodequeue-1 .active .views-field-field-carousel-thumb:before,
+.view-carousel .active .views-field-field-carousel-thumb:before
 {
 	border:3px solid #a7070d;
 	content:" ";
@@ -873,12 +900,14 @@ body .open-nav
 	bottom:0;
 }
 
+.view-carousel .views-field-field-carousel-thumb img,
 .view-nodequeue-1 .views-field-field-carousel-thumb img 
 {
 	width:100%;
 	height:auto;
 }
-.view-nodequeue-1 .views-row-4 .views-field-field-carousel-thumb
+.view-nodequeue-1 .views-row-4 .views-field-field-carousel-thumb,
+.view-carousel .views-row-4 .views-field-field-carousel-thumb
 {
 	margin-right:0;
 }

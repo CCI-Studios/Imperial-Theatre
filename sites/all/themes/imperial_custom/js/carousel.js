@@ -4,7 +4,7 @@
 	var timer = null;
 	var wait_time = 6000;
 	$(function() {
-		$(".view-nodequeue-1 .views-field-field-carousel-thumb img").click(function(){
+		$(".view-carousel .views-field-field-carousel-thumb img").click(function(){
 			clearActive();
 			var container = $(this).parent().parent().parent();
 			setActive(container);
@@ -12,17 +12,17 @@
 			x = container.index()+1;
 		});
 
-		setActive($(".view-nodequeue-1 .views-row-1"));
+		setActive($(".carousel .views-row-1"));
 
-		max = $(".view-nodequeue-1 .views-row").size();
+		max = $(".carousel .views-row").size();
 
 		resetTimer();
 	});
 
 	function clearActive()
 	{
-		$(".view-nodequeue-1 .active").removeClass("active");
-		$(".view-nodequeue-1 .views-field-body, .view-nodequeue-1 .views-field-field-carousel-background img").hide();
+		$(".view-carousel .active").removeClass("active");
+		$(".view-carousel .views-field-body, .view-carousel .views-field-field-carousel-background img").hide();
 	}
 
 	function setActive(container)
@@ -38,7 +38,7 @@
 		if (x>max) x = 1;
 
 		clearActive();
-		setActive($(".view-nodequeue-1 .views-row-"+x));
+		setActive($(".view-carousel .views-row-"+x));
 
 		resetTimer();
 	}
