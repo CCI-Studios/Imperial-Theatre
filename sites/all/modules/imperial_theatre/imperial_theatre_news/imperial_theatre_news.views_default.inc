@@ -53,8 +53,10 @@ function imperial_theatre_news_views_default_views() {
   $handler->display->display_options['fields']['field_date_1']['field'] = 'field_date';
   $handler->display->display_options['fields']['field_date_1']['label'] = '';
   $handler->display->display_options['fields']['field_date_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_date_1']['alter']['text'] = '<span class="month">[field_date]</span>
-<span class="day">[field_date_1]</span>';
+  $handler->display->display_options['fields']['field_date_1']['alter']['text'] = '<span class="calendar-icon">
+<span class="month">[field_date]</span>
+<span class="day">[field_date_1]</span>
+</span>';
   $handler->display->display_options['fields']['field_date_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date_1']['settings'] = array(
     'format_type' => 'day_of_month',

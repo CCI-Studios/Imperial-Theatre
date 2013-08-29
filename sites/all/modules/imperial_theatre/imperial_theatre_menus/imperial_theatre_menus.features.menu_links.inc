@@ -107,21 +107,6 @@ function imperial_theatre_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -45,
   );
-  // Exported menu link: main-menu:node/11
-  $menu_links['main-menu:node/11'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/11',
-    'router_path' => 'node/%',
-    'link_title' => 'Season Playbill',
-    'options' => array(),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'parent_path' => 'node/3',
-  );
   // Exported menu link: main-menu:node/12
   $menu_links['main-menu:node/12'] = array(
     'menu_name' => 'main-menu',
@@ -660,7 +645,6 @@ function imperial_theatre_menus_menu_default_menu_links() {
   t('Panoramic Tour');
   t('Privacy Policy');
   t('R. W. Lawton Art Gallery');
-  t('Season Playbill');
   t('Seating Map');
   t('Sponsors, Grants and Advertisers');
   t('Technical Fees');

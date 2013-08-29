@@ -1,0 +1,13 @@
+name = Imperial Theatre Season Playbill
+core = 7.x
+package = Imperial Theatre
+version = 7.x-1.0
+project = imperial_theatre_season_playbill
+dependencies[] = image
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[image][] = playbill_item_thumbnail
+features[views_view][] = season_playbill
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/imperial_theatre

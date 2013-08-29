@@ -360,7 +360,7 @@ function imperial_theatre_blocks_default_fe_block_settings() {
     'delta' => 'carousel-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '<front<>',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(

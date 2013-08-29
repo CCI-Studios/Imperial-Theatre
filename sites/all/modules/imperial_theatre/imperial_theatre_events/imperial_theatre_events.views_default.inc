@@ -32,6 +32,40 @@ function imperial_theatre_events_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Event Date - Month (hidden) */
+  $handler->display->display_options['fields']['field_event_date_1']['id'] = 'field_event_date_1';
+  $handler->display->display_options['fields']['field_event_date_1']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date_1']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date_1']['ui_name'] = 'Event Date - Month (hidden)';
+  $handler->display->display_options['fields']['field_event_date_1']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date_1']['settings'] = array(
+    'format_type' => 'short_month',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
+  /* Field: Event Date - Day */
+  $handler->display->display_options['fields']['field_event_date_2']['id'] = 'field_event_date_2';
+  $handler->display->display_options['fields']['field_event_date_2']['table'] = 'field_data_field_event_date';
+  $handler->display->display_options['fields']['field_event_date_2']['field'] = 'field_event_date';
+  $handler->display->display_options['fields']['field_event_date_2']['ui_name'] = 'Event Date - Day';
+  $handler->display->display_options['fields']['field_event_date_2']['label'] = '';
+  $handler->display->display_options['fields']['field_event_date_2']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_date_2']['alter']['text'] = '<span class="calendar-icon">
+<span class="month">[field_event_date_1]</span>
+<span class="day">[field_event_date_2]</span>
+</span>';
+  $handler->display->display_options['fields']['field_event_date_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_date_2']['settings'] = array(
+    'format_type' => 'day_of_month',
+    'fromto' => 'value',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';

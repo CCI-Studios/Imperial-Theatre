@@ -14,7 +14,6 @@ features[menu_links][] = main-menu:events
 features[menu_links][] = main-menu:https://secure1.tixhub.com/imperial-sarnia/procurement/
 features[menu_links][] = main-menu:https://www.facebook.com/ImperialTheatreSarnia
 features[menu_links][] = main-menu:news
-features[menu_links][] = main-menu:node/11
 features[menu_links][] = main-menu:node/12
 features[menu_links][] = main-menu:node/14
 features[menu_links][] = main-menu:node/15
