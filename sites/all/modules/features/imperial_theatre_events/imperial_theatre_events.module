@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Imperial Theatre Events feature.
+ */
+
+include_once 'imperial_theatre_events.features.inc';
