@@ -2,7 +2,7 @@
 	var x = 1;
 	var max = 0;
 	var timer = null;
-	var wait_time = 6000;
+	var wait_time = 15000;
 	$(function() {
 		$(".view-carousel .views-field-field-carousel-thumb img").click(function(){
 			clearActive();
